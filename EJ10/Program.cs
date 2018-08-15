@@ -8,12 +8,12 @@ namespace EJ10
 {
     class Program
     {
-        public const int _inferior = 1900;
-        public const int _superior = 2015;
+        public const int INFERIOR = 1900;
+        public const int SUPERIOR = 2015;
         static void Main(string[] args)
         {
             Console.WriteLine("(TP1/EJ10)");
-            for (int i = _inferior; i <= _superior; i++)
+            for (int i = INFERIOR; i <= SUPERIOR; i++)
             {
                 if (i % 4 == 0)
                 {

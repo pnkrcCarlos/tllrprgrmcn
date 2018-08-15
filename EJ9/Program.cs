@@ -36,16 +36,17 @@ namespace EJ9
         {
             int raiz = (int)Math.Floor(Math.Sqrt(n));
             int cont = 2;
-            while (cont <= raiz)
+            while (cont <= raiz && n % cont != 0) // n % cont != 0 reemplaza el break
             {
-                if (n % cont == 0)
+                cont++;
+                /*if (n % cont == 0)
                 {
                     break;
                 }
                 else
                 {
                     cont++;
-                }
+                }*/
             }
             if (cont > raiz)
             {

@@ -8,20 +8,20 @@ namespace EJ3
 {
     class Program
     {
-        public const int _inferior = 156;
-        public const int _superior = 497;
+        public const int INFERIOR = 156;
+        public const int SUPERIOR = 497;
         static void Main(string[] args)
         {
             Console.WriteLine("(TP1/EJ3)");
             int sumatoria = 0;
-            for (int i = _inferior; i <= _superior; i++)
+            for (int i = INFERIOR; i <= SUPERIOR; i++)
             {
                 sumatoria += i;
             }
-            Console.WriteLine("Limite inferior: " + _inferior);
-            Console.WriteLine("Limite superior: " + _superior);
+            Console.WriteLine("Limite inferior: " + INFERIOR);
+            Console.WriteLine("Limite superior: " + SUPERIOR);
             Console.WriteLine("Sumatoria: " + sumatoria);
-            Console.WriteLine("Promedio: " + ((decimal)sumatoria / (decimal)(_superior - _inferior)).ToString("0.00"));
+            Console.WriteLine("Promedio: " + ((decimal)sumatoria / (decimal)(SUPERIOR - INFERIOR)).ToString("0.00"));
             Console.ReadLine();
         }
     }
